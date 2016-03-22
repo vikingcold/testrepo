@@ -12,12 +12,13 @@ var app = express();
 
 var msg = 'hello world';
 console.log(msg);
+
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
 
 // uncomment after placing your favicon in /public
-//app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
+//app.use(favicon(__dirname + '/public/favicon.ico'));
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -56,6 +57,7 @@ app.use(function(err, req, res, next) {
     message: err.message,
     error: {}
   });
+  return null;
 });
 
 
