@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 # vscode-samples
 
@@ -30,3 +31,6 @@ To run the sample application, press `F5` to start the server under the debugger
 ## License
 
 [MIT](LICENSE)
+=======
+# testrepo
+>>>>>>> 74f68a7f996e1ce64a91538f5c489f001e2ef340
